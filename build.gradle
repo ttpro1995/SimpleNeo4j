@@ -3,9 +3,11 @@ plugins {
 }
 
 group 'thaithien'
-version '0.1'
+version '0.2'
 
 apply plugin: 'java'
+apply plugin: 'maven'
+
 
 sourceCompatibility = 1.8
 
@@ -34,11 +36,30 @@ bintray {
         licenses = ['MIT']
         vcsUrl = 'https://github.com/ttpro1995/SimpleNeo4j.git'
         version {
-            name = '0.1'
+            name = '0.2'
             desc = 'Simple neo4j client '
             released  = new Date()
-            vcsTag = '0.1'
+            vcsTag = '0.2'
             attributes = ['simple-neo4j': 'I have no idea what is it']
         }
     }
+}
+
+task writeNewPom << {
+    pom {
+        project {
+            groupId 'thaithien'
+            artifactId 'SimpleNeo4j'
+            version '0.2'
+
+            inceptionYear '2018'
+            licenses {
+                license {
+                    name 'The MIT License'
+                    url 'https://opensource.org/licenses/MIT'
+                    distribution 'repo'
+                }
+            }
+        }
+    }.writeTo("$buildDir/newpom.xml")
 }
