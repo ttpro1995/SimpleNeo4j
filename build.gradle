@@ -48,7 +48,7 @@ bintray {
 task writeNewPom << {
     pom {
         project {
-            groupId 'thaithien'
+            groupId 'me.thaithien'
             artifactId 'SimpleNeo4j'
             version '0.3'
 
