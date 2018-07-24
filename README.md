@@ -1,17 +1,37 @@
+We use https://jitpack.io/#ttpro1995/SimpleNeo4j/0.7
 
-Gradle
+Gradle  
 ```
-compile 'thaithien:simpleneo4j:0.2'
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+```
+	dependencies {
+	        implementation 'com.github.ttpro1995:SimpleNeo4j:0.7'
+	}
 ```
 
 Maven
 ```
-<dependency>
-  <groupId>thaithien</groupId>
-  <artifactId>simpleneo4j</artifactId>
-  <version>0.2</version>
-  <type>pom</type>
-</dependency>
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories> 
+```
+
+```
+	<dependency>
+	    <groupId>com.github.ttpro1995</groupId>
+	    <artifactId>SimpleNeo4j</artifactId>
+	    <version>0.7</version>
+	</dependency>
 ```
 
 
@@ -19,7 +39,7 @@ Simple usage : see junit test
 
 
 ```
-package SimpleNeo4j;
+package me.thaithien.simpleneo4j;
 
 import org.junit.Test;
 
@@ -27,8 +47,6 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
-import static org.junit.Assert.*;
 
 public class Neo4jManagerTest {
 
@@ -54,5 +72,6 @@ public class Neo4jManagerTest {
             assert (date.equals(reportDate));
         });
     }
+
 }
 ```
