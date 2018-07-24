@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package me.thaithien.SimpleNeo4j;
+package me.thaithien.simpleneo4j;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -17,7 +17,6 @@ import java.util.Optional;
 import static java.util.stream.Collectors.toList;
 import java.util.stream.Stream;
 
-import org.neo4j.cypher.internal.v3_4.functions.E;
 import org.neo4j.driver.v1.AuthTokens;
 import org.neo4j.driver.v1.Driver;
 import org.neo4j.driver.v1.GraphDatabase;

@@ -1,4 +1,4 @@
-package me.thaithien.SimpleNeo4j;
+package me.thaithien.simpleneo4j;
 
 import org.junit.Test;
 
@@ -6,8 +6,6 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
-import static org.junit.Assert.*;
 
 public class Neo4jManagerTest {
 

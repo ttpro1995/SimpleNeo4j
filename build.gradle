@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'me.thaithien'
-version '0.3'
+version '0.4'
 
 apply plugin: 'java'
 apply plugin: 'maven'
@@ -32,14 +32,14 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = 'thaithien'
-        name = 'SimpleNeo4j'
+        name = 'simpleneo4j'
         licenses = ['MIT']
         vcsUrl = 'https://github.com/ttpro1995/SimpleNeo4j.git'
         version {
-            name = '0.3'
+            name = '0.4'
             desc = 'Simple neo4j client '
             released  = new Date()
-            vcsTag = '0.3'
+            vcsTag = '0.4'
             attributes = ['simple-neo4j': 'I have no idea what is it']
         }
     }
@@ -49,8 +49,8 @@ task writeNewPom << {
     pom {
         project {
             groupId 'me.thaithien'
-            artifactId 'SimpleNeo4j'
-            version '0.3'
+            artifactId 'simpleneo4j'
+            version '0.4'
 
             inceptionYear '2018'
             licenses {

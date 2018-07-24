@@ -1,4 +1,4 @@
-package me.thaithien.SimpleNeo4j;
+package me.thaithien.simpleneo4j;
 
 import org.neo4j.driver.v1.*;
 
