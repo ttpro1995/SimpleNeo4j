@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SimpleNeo4j;
+package me.thaithien.SimpleNeo4j;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

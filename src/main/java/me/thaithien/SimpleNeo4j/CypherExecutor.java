@@ -1,4 +1,4 @@
-package SimpleNeo4j;
+package me.thaithien.SimpleNeo4j;
 
 import java.util.Iterator;
 import java.util.Map;

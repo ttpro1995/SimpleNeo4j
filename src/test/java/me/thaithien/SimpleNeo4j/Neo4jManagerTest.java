@@ -1,4 +1,4 @@
-package SimpleNeo4j;
+package me.thaithien.SimpleNeo4j;
 
 import org.junit.Test;
 
