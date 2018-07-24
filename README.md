@@ -1,14 +1,14 @@
 
 Gradle
 ```
-compile 'thaithien:SimpleNeo4jManager:0.2'
+compile 'thaithien:simpleneo4j:0.2'
 ```
 
 Maven
 ```
 <dependency>
   <groupId>thaithien</groupId>
-  <artifactId>SimpleNeo4jManager</artifactId>
+  <artifactId>simpleneo4j</artifactId>
   <version>0.2</version>
   <type>pom</type>
 </dependency>
